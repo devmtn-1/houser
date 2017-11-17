@@ -1,0 +1,61 @@
+.LandingPage {
+    width: 70vw;
+    height: 100vh;
+    min-height: 850px;
+    background: white;
+    margin: 0 auto;
+}
+
+.LandingPage .inputBox {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.LandingPage .inputBox span {
+    display: block;
+    text-align: left;
+    width: 500px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.LandingPage .inputBox input {
+    width: 500px;
+    height: 30px;
+    border: green solid 1px;
+    margin-bottom: 30px;
+}
+
+.LandingPage img {
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+.auth_buttons #btnLogin {
+    background: #8AEA92;
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.auth_buttons #btnReg {
+    background: #3B5249;
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.auth_buttons #btnLogin a {
+    text-decoration: none;
+}
+
+.auth_buttons #btnReg a {
+    text-decoration: none;
+}
+

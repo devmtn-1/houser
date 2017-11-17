@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import LandingPage from './components/LandingPage';
+import Dashboard from './components/Dashboard';
+import WizardOne from './components/WizardOne';
+import WizardTwo from './components/WizardTwo';
+import {Route, Switch, Link} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      
+          <Switch>
+            <Route exact path="/" component={LandingPage}/>
+            <Route path="/dashboard" component={Dashboard}/>
+            <Route path="/wizard/1" component={WizardOne}/>
+            <Route path="/wizard/2" component={WizardTwo}/>
+          </Switch>
       </div>
     );
   }
